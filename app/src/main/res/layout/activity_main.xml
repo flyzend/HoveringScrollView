@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" >
+
+    <com.hibood.www.hoveringscrollview.HoveringScrollview
+        android:id="@+id/hoveringScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="TOP信息占位\nTOP信息\nTOP信息\nTOP信息占位"
+                    android:textColor="#d19275"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/search02"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" >
+
+                <!-- 这个悬浮条必须是固定高度 -->
+
+                <LinearLayout
+                    android:id="@+id/hoveringLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#A8A8A8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="￥188\r\n原价：￥399"
+                        android:textColor="#FF7F00" />
+
+                    <Button
+                        android:id="@+id/btnQiaBuy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FF7F00"
+                        android:onClick="clickListenerMe"
+                        android:padding="10dp"
+                        android:text="立即抢购"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="1测试内容\n2测试内容\n3测试内容\n4测试内容\n5测试内容\n6测试内容\n7测试内容\n8测试内容\n9测试内容\n10测试内容\n11测试内容\n12测试内容\n13测试内容\n14测试内容\n15测试内容\n16测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n测试内容\n27测试内容"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </com.hibood.www.hoveringscrollview.HoveringScrollview>
+
+    <LinearLayout
+        android:id="@+id/search01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
